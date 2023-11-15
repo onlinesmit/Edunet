@@ -1,0 +1,14 @@
+table {
+    background-color: blueviolet;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr :nth-last-child(even){
+    background-color: aqua;
+}
