@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> -->
+<head>
+    <script>
+    var current = new Date();
+    current.setMonth(current.getMonth()+1);
+    document.write(current);
+    cookievalue = escape(document.myform.customer.value)+ ";";
+    document.cookie="name" + cookievalue;
+    
+    </script>
+</head>
+
+<body>
+    <form name="myform">
+
+        Enter customer name <input type="text" name="customer" />
+    
+    <input type="button" onclick="Writecookie()" value="Set Cookie"/>
+   </form>
+</body>
+</html>
