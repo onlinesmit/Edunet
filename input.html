@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in html version 2.0</title>
+    <style>
+        #h {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10%;
+         }
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 id="h">Form in HTML</h1>
+
+    <form action="" method="get" autocomplete="off">
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="first name" id="fname"> <br>
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="last name" name="" id="lname"> <br>
+        <h5>Select ur editor</h5>
+        <select name="Editor" id="">
+            <option value="1">VS Code</option>
+            <option value="2">Sublime text</option>
+            <option value="3">Note pad</option>
+            <option value="5">PyCharm</option>
+        </select>
+
+        <input list="editor" name="editor">
+        <datalist id="editor">
+            <option value="1">VS Code</option>
+            <option value="2">Sublime text</option>
+            <option value="3">Note pad</option>
+            <option value="5">PyCharm</option>      
+        </datalist>
+        <input type="hidden" name="">
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
